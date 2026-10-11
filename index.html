@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>باب الهواري للخدمات والاستثمار السياحي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f2f6f7;--surface:#fff;--ink:#0b2233;--muted:#516775;--line:#d3dee3;--sea:#0e4a6b;--lagoon:#1b8a9a;--sun:#e8a33d;--on-sea:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081824;--surface:#0f2536;--ink:#e9f1f4;--muted:#9bb2bf;--line:#1f3a4d;--sea:#0a2f45;--lagoon:#4cc0cf}}
+:root[data-theme="dark"]{--bg:#081824;--surface:#0f2536;--ink:#e9f1f4;--muted:#9bb2bf;--line:#1f3a4d;--sea:#0a2f45;--lagoon:#4cc0cf}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;line-height:1.75;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;font-size:18px}
+.brand svg{width:30px;height:34px;flex:none}
+nav{margin-inline-start:auto;display:flex;gap:20px;align-items:center}
+nav a{text-decoration:none;color:var(--muted);font-size:15px}
+nav a:hover{color:var(--ink)}
+button{font:inherit;cursor:pointer}
+.lang{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:4px 12px;font-size:14px}
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+h1{font-size:clamp(32px,5.2vw,56px);line-height:1.25;margin:0 0 18px;font-weight:700;letter-spacing:-.01em}
+.lead{color:var(--muted);font-size:19px;max-width:34em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:500;border:1px solid var(--sea);background:var(--sea);color:var(--on-sea)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+.gate{background:var(--sea);color:#fff;border-radius:999px 999px 14px 14px;padding:48px 24px 24px;border:6px solid var(--sun);border-bottom-width:6px;max-width:380px;margin-inline:auto;width:100%}
+.gate h2{margin:0 0 14px;text-align:center;font-size:15px;font-weight:500;color:#cfe3ea}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid rgba(255,255,255,.18);font-size:15px}
+.row b{font-weight:700}
+.chip{font-size:13px;padding:1px 10px;border-radius:99px;background:rgba(255,255,255,.14);white-space:nowrap}
+.chip.warn{background:var(--sun);color:#2b1b00}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2.t{font-size:clamp(26px,3.6vw,36px);margin:0 0 8px;line-height:1.3}
+.sub{color:var(--muted);margin:0 0 36px;max-width:38em}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}
+.svc>div{padding:26px}
+.svc>div+div{border-inline-start:1px solid var(--line)}
+.svc h3{margin:0 0 6px;font-size:20px}
+.svc p{margin:0;color:var(--muted);font-size:16px}
+.tabs{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 18px;border-radius:99px}
+.tab[aria-selected="true"]{background:var(--sea);color:#fff;border-color:var(--sea)}
+.panel{display:none;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.panel.on{display:grid}
+.panel ul{margin:0;padding-inline-start:20px}
+.panel li{margin-bottom:8px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.box h4{margin:0 0 12px;font-size:16px}
+.opts{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.opt{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:5px 12px;font-size:14px}
+.opt[aria-pressed="true"]{border-color:var(--lagoon);box-shadow:inset 0 0 0 1px var(--lagoon)}
+.msg{background:var(--bg);border-inline-start:4px solid var(--lagoon);border-radius:8px;padding:12px 14px;font-size:15px;min-height:96px}
+.rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.rm{aspect-ratio:1;border-radius:8px;display:grid;place-items:center;font-size:13px;background:var(--bg);border:1px solid var(--line)}
+.rm.o{background:var(--lagoon);color:#06222b;border-color:var(--lagoon)}
+.rm.c{background:var(--sun);color:#2b1b00;border-color:var(--sun)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:s;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;border-top:3px solid var(--lagoon);padding-top:14px}
+.steps li::before{content:counter(s);font-weight:700;color:var(--lagoon);font-size:22px}
+.steps h3{margin:2px 0 4px;font-size:19px}
+.steps p{margin:0;color:var(--muted);font-size:16px}
+.cta{background:var(--sea);color:#fff;border-radius:18px;padding:44px 28px;text-align:center}
+.cta h2{margin:0 0 8px;font-size:28px}
+.cta p{margin:0 0 22px;color:#cfe3ea}
+.cta .btn{background:var(--sun);border-color:var(--sun);color:#2b1b00;font-weight:700}
+footer{padding:28px 0 36px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.cta .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
+.cta .btn.alt{background:transparent;color:#fff;border-color:rgba(255,255,255,.45);font-weight:500}
+.addr{margin:0 0 26px!important;color:#fff!important}
+.addr bdi{direction:ltr;unicode-bidi:isolate}
+.inq{max-width:520px;margin:0 auto;text-align:start;border-top:1px solid rgba(255,255,255,.2);padding-top:22px}
+.inq label{display:block;font-size:14px;margin:0 0 4px;color:#cfe3ea}
+.inq input,.inq select,.inq textarea{width:100%;font:inherit;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);margin-bottom:14px}
+.inq .btn{border:0;cursor:pointer;width:100%}
+@media (max-width:820px){
+.hero .wrap,.panel.on,.svc,.steps{grid-template-columns:1fr}
+.svc>div+div{border-inline-start:0;border-top:1px solid var(--line)}
+nav a.l{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="brand" href="#top" aria-label="Bab Al-Hawari">
+<svg viewBox="0 0 30 34" aria-hidden="true"><path d="M2 32V15a13 13 0 0 1 26 0v17" fill="none" stroke="#e8a33d" stroke-width="3"/><path d="M9 32V16a6 6 0 0 1 12 0v16" fill="#1b8a9a"/></svg>
+<span data-ar="باب الهواري" data-en="Bab Al-Hawari">باب الهواري</span></a>
+<nav>
+<a class="l" href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+<a class="l" href="#solutions" data-ar="الأنظمة" data-en="Solutions">الأنظمة</a>
+<a class="l" href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+<button class="lang" id="lang" type="button">English</button>
+</nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1 data-ar="بوابتك إلى السفر والإقامة في ليبيا" data-en="Your gateway to travel and stay in Libya">بوابتك إلى السفر والإقامة في ليبيا</h1>
+<p class="lead" data-ar="باب الهواري للخدمات والاستثمار السياحي: حجز رحلات جميع شركات الطيران، وإقامة في الفنادق، وأنظمة تشغيل تساعد شركات الطيران والفنادق على إدارة عملها وإبلاغ عملائها." data-en="Bab Al-Hawari for Tourism Services and Investment: flights on all airlines, hotel stays, and operating systems that help airlines and hotels run their business and keep their customers informed.">باب الهواري للخدمات والاستثمار السياحي: حجز رحلات جميع شركات الطيران، وإقامة في الفنادق، وأنظمة تشغيل تساعد شركات الطيران والفنادق على إدارة عملها وإبلاغ عملائها.</p>
+<div class="btns"><a class="btn" href="#solutions" data-ar="استعرض الأنظمة" data-en="Explore our systems">استعرض الأنظمة</a><a class="btn alt" href="https://facebook.com/61594946143337" target="_blank" rel="noopener" data-ar="صفحتنا على فيسبوك" data-en="Our Facebook page">صفحتنا على فيسبوك</a></div>
+</div>
+<div class="gate" aria-label="Flight notifications preview">
+<h2 data-ar="إشعارات الرحلات المباشرة" data-en="Live flight notifications">إشعارات الرحلات المباشرة</h2>
+<div class="row"><b>XX 101</b><span data-ar="بنغازي ← طرابلس" data-en="Benghazi → Tripoli">بنغازي ← طرابلس</span><span class="chip" data-ar="في الموعد" data-en="On time">في الموعد</span></div>
+<div class="row"><b>XX 205</b><span data-ar="طرابلس ← مصراتة" data-en="Tripoli → Misrata">طرابلس ← مصراتة</span><span class="chip warn" data-ar="تأخير 40 د" data-en="Delayed 40m">تأخير 40 د</span></div>
+<div class="row"><b>XX 318</b><span data-ar="مصراتة ← بنغازي" data-en="Misrata → Benghazi">مصراتة ← بنغازي</span><span class="chip" data-ar="الصعود بوابة 3" data-en="Boarding, gate 3">الصعود بوابة 3</span></div>
+</div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2 class="t" data-ar="خدماتنا" data-en="Our services">خدماتنا</h2>
+<p class="sub" data-ar="نجمع الطيران والفنادق والاستثمار السياحي في جهة واحدة." data-en="Aviation, hotels, and tourism investment under one roof.">نجمع الطيران والفنادق والاستثمار السياحي في جهة واحدة.</p>
+<div class="svc">
+<div><h3 data-ar="شركات الطيران" data-en="Airlines">شركات الطيران</h3><p data-ar="حجز وإصدار تذاكر على جميع شركات الطيران، مع متابعة حالة الرحلة وإبلاغ المسافر بأي تغيير." data-en="Booking and ticketing on all airlines, with flight tracking and instant alerts to passengers when anything changes.">حجز وإصدار تذاكر على جميع شركات الطيران، مع متابعة حالة الرحلة وإبلاغ المسافر بأي تغيير.</p></div>
+<div><h3 data-ar="الفنادق" data-en="Hotels">الفنادق</h3><p data-ar="حجز غرف في الفنادق المحلية والدولية بأسعار واضحة وتأكيد فوري للحجز." data-en="Room booking in local and international hotels, with clear prices and instant confirmation.">حجز غرف في الفنادق المحلية والدولية بأسعار واضحة وتأكيد فوري للحجز.</p></div>
+<div><h3 data-ar="الاستثمار السياحي" data-en="Tourism investment">الاستثمار السياحي</h3><p data-ar="شراكات وحلول تقنية تدعم المشاريع السياحية من التخطيط حتى التشغيل." data-en="Partnerships and technology that support tourism projects from planning through operation.">شراكات وحلول تقنية تدعم المشاريع السياحية من التخطيط حتى التشغيل.</p></div>
+</div></div></section>
+
+<section id="solutions"><div class="wrap">
+<h2 class="t" data-ar="أنظمة للسياحة" data-en="Systems for tourism">أنظمة للسياحة</h2>
+<p class="sub" data-ar="نظامان جاهزان للعمل: نظام إدارة الفنادق، ونظام الطيران للإشعارات والمعلومات." data-en="Two ready systems: hotel management, and an airline system for notifications and passenger information.">نظامان جاهزان للعمل: نظام إدارة الفنادق، ونظام الطيران للإشعارات والمعلومات.</p>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" aria-selected="true" data-p="p1" data-ar="نظام الطيران" data-en="Airline system">نظام الطيران</button>
+<button class="tab" role="tab" aria-selected="false" data-p="p2" data-ar="نظام الفنادق" data-en="Hotel system">نظام الفنادق</button>
+</div>
+
+<div class="panel on" id="p1">
+<div><ul>
+<li data-ar="إشعارات تلقائية عند التأخير أو إلغاء الرحلة أو تغيير البوابة أو الصعود." data-en="Automatic alerts for delays, cancellations, gate changes, and boarding.">إشعارات تلقائية عند التأخير أو إلغاء الرحلة أو تغيير البوابة أو الصعود.</li>
+<li data-ar="إرسال عبر واتساب والرسائل النصية والبريد الإلكتروني." data-en="Delivery by WhatsApp, SMS, and email.">إرسال عبر واتساب والرسائل النصية والبريد الإلكتروني.</li>
+<li data-ar="شاشة جدول رحلات للمطارات والمكاتب ومواقع التواصل." data-en="Flight schedule board for airports, offices, and social pages.">شاشة جدول رحلات للمطارات والمكاتب ومواقع التواصل.</li>
+<li data-ar="رسائل بالعربية والإنجليزية وسجل بكل ما أُرسل." data-en="Arabic and English messages, with a log of everything sent.">رسائل بالعربية والإنجليزية وسجل بكل ما أُرسل.</li>
+</ul></div>
+<div class="box"><h4 data-ar="جرّب: ما الذي حدث للرحلة XX 205؟" data-en="Try it: what happened to flight XX 205?">جرّب: ما الذي حدث للرحلة XX 205؟</h4>
+<div class="opts" id="opts">
+<button class="opt" aria-pressed="true" data-k="d" data-ar="تأخير" data-en="Delay">تأخير</button>
+<button class="opt" aria-pressed="false" data-k="g" data-ar="تغيير البوابة" data-en="Gate change">تغيير البوابة</button>
+<button class="opt" aria-pressed="false" data-k="c" data-ar="إلغاء" data-en="Cancellation">إلغاء</button>
+</div>
+<div class="msg" id="msg" aria-live="polite"></div></div>
+</div>
+
+<div class="panel" id="p2">
+<div><ul>
+<li data-ar="تقويم حجوزات وإدارة الغرف وحالتها (متاحة، مشغولة، تنظيف)." data-en="Booking calendar and room status: available, occupied, cleaning.">تقويم حجوزات وإدارة الغرف وحالتها (متاحة، مشغولة، تنظيف).</li>
+<li data-ar="تسجيل الوصول والمغادرة وفواتير الضيوف." data-en="Check-in, check-out, and guest invoices.">تسجيل الوصول والمغادرة وفواتير الضيوف.</li>
+<li data-ar="أسعار موسمية وعروض وتقارير الإشغال والإيرادات." data-en="Seasonal rates, offers, and occupancy and revenue reports.">أسعار موسمية وعروض وتقارير الإشغال والإيرادات.</li>
+<li data-ar="رسائل تأكيد وتذكير تلقائية للضيوف." data-en="Automatic confirmation and reminder messages to guests.">رسائل تأكيد وتذكير تلقائية للضيوف.</li>
+</ul></div>
+<div class="box"><h4 data-ar="حالة الغرف اليوم" data-en="Room status today">حالة الغرف اليوم</h4>
+<div class="rooms" id="rooms"></div>
+<p style="margin:12px 0 0;font-size:14px;color:var(--muted)" data-ar="أزرق: مشغولة. أصفر: تنظيف. فارغ: متاحة." data-en="Blue: occupied. Amber: cleaning. Empty: available.">أزرق: مشغولة. أصفر: تنظيف. فارغ: متاحة.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2 class="t" data-ar="كيف نبدأ معك" data-en="How we start">كيف نبدأ معك</h2>
+<p class="sub" data-ar="" data-en=""></p>
+<ol class="steps">
+<li><h3 data-ar="نفهم عملك" data-en="We learn your operation">نفهم عملك</h3><p data-ar="نراجع رحلاتك أو غرفك وطريقة تواصلك مع العملاء." data-en="We review your flights or rooms and how you reach customers.">نراجع رحلاتك أو غرفك وطريقة تواصلك مع العملاء.</p></li>
+<li><h3 data-ar="نربط النظام" data-en="We connect the system">نربط النظام</h3><p data-ar="نضبط النظام على بياناتك وقنوات الإرسال التي تستخدمها." data-en="We set it up with your data and the channels you use.">نضبط النظام على بياناتك وقنوات الإرسال التي تستخدمها.</p></li>
+<li><h3 data-ar="نشغّل وندعم" data-en="We run and support it">نشغّل وندعم</h3><p data-ar="تعمل الإشعارات والتقارير يوميًا ونتابع معك أي تعديل." data-en="Alerts and reports run daily, and we follow up on any change.">تعمل الإشعارات والتقارير يوميًا ونتابع معك أي تعديل.</p></li>
+</ol></div></section>
+
+<section id="contact"><div class="wrap"><div class="cta">
+<h2 data-ar="ابدأ مع باب الهواري" data-en="Start with Bab Al-Hawari">ابدأ مع باب الهواري</h2>
+<p style="margin-bottom:18px" data-ar="اتصل بنا أو راسلنا على واتساب، أو أرسل طلبك من النموذج أدناه." data-en="Call us, message us on WhatsApp, or send your request with the form below.">اتصل بنا أو راسلنا على واتساب، أو أرسل طلبك من النموذج أدناه.</p>
+<div class="acts"><a class="btn" href="tel:+218912645281"><bdi>+218 91 264 5281</bdi></a><a class="btn alt" href="https://wa.me/218912645281" target="_blank" rel="noopener">WhatsApp</a><a class="btn alt" href="https://facebook.com/61594946143337" target="_blank" rel="noopener">Facebook</a></div>
+<p class="addr" data-ar="العنوان: الطريق الدائري الخامس، الهواري، بنغازي، ليبيا" data-en="Address: 5th Ring Road, Al-Hawari, Benghazi, Libya">العنوان: الطريق الدائري الخامس، الهواري، بنغازي، ليبيا</p>
+<div class="inq">
+<label for="qn" data-ar="الاسم" data-en="Name">الاسم</label><input id="qn" autocomplete="name">
+<label for="qs" data-ar="ما الذي تحتاجه؟" data-en="What do you need?">ما الذي تحتاجه؟</label>
+<select id="qs"><option data-ar="حجز رحلة طيران" data-en="Flight booking">حجز رحلة طيران</option><option data-ar="حجز فندق" data-en="Hotel booking">حجز فندق</option><option data-ar="نظام إدارة الفنادق" data-en="Hotel management system">نظام إدارة الفنادق</option><option data-ar="نظام الطيران والإشعارات" data-en="Airline and notifications system">نظام الطيران والإشعارات</option><option data-ar="الاستثمار السياحي" data-en="Tourism investment">الاستثمار السياحي</option></select>
+<label for="qm" data-ar="التفاصيل" data-en="Details">التفاصيل</label><textarea id="qm" rows="3"></textarea>
+<button class="btn" type="button" id="qsend" data-ar="أرسل عبر واتساب" data-en="Send on WhatsApp">أرسل عبر واتساب</button>
+</div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><span data-ar="باب الهواري للخدمات والاستثمار السياحي" data-en="Bab Al-Hawari for Tourism Services and Investment">باب الهواري للخدمات والاستثمار السياحي</span><span>babalhawari.ly · <bdi dir="ltr">+218 91 264 5281</bdi></span></div></footer>
+
+<script>
+(function(){
+var lang="ar",M={
+d:{ar:"تنبيه: تأخرت الرحلة XX 205 من طرابلس إلى مصراتة 40 دقيقة. الإقلاع المتوقع بعد التأخير. نعتذر عن الإزعاج.",en:"Notice: flight XX 205 from Tripoli to Misrata is delayed by 40 minutes. We apologise for the inconvenience."},
+g:{ar:"تنبيه: تم تغيير بوابة الرحلة XX 205 إلى البوابة 5. يرجى التوجه إليها قبل موعد الصعود.",en:"Notice: flight XX 205 now boards at gate 5. Please go there before boarding time."},
+c:{ar:"تنبيه: أُلغيت الرحلة XX 205. تواصل معنا لإعادة الحجز على أقرب رحلة متاحة أو استرداد قيمة التذكرة.",en:"Notice: flight XX 205 is cancelled. Contact us to rebook on the next available flight or get a refund."}};
+var key="d";
+function msg(){document.getElementById("msg").textContent=M[key][lang]}
+function apply(){
+document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+document.querySelectorAll("[data-ar]").forEach(function(e){e.textContent=e.getAttribute("data-"+lang)});
+document.getElementById("lang").textContent=lang==="ar"?"English":"العربية";
+document.title=lang==="ar"?"باب الهواري للخدمات والاستثمار السياحي":"Bab Al-Hawari for Tourism Services and Investment";
+msg()}
+document.getElementById("lang").onclick=function(){lang=lang==="ar"?"en":"ar";apply()};
+document.querySelectorAll(".tab").forEach(function(t){t.onclick=function(){
+document.querySelectorAll(".tab").forEach(function(x){x.setAttribute("aria-selected",x===t)});
+document.querySelectorAll(".panel").forEach(function(p){p.classList.toggle("on",p.id===t.dataset.p)})}});
+document.querySelectorAll(".opt").forEach(function(o){o.onclick=function(){
+key=o.dataset.k;document.querySelectorAll(".opt").forEach(function(x){x.setAttribute("aria-pressed",x===o)});msg()}});
+var st="o,,c,o,,,o,c,,o,o,,,c,,o".split(","),r=document.getElementById("rooms");
+st.forEach(function(s,i){var d=document.createElement("div");d.className="rm "+s;d.textContent=101+i;r.appendChild(d)});
+document.getElementById("qsend").onclick=function(){
+var s=document.getElementById("qs"),t=(lang==="ar"?"مرحبًا باب الهواري، الاسم: ":"Hello Bab Al-Hawari, name: ")+document.getElementById("qn").value+"\n"+s.options[s.selectedIndex].textContent+"\n"+document.getElementById("qm").value;
+window.open("https://wa.me/218912645281?text="+encodeURIComponent(t),"_blank")};
+apply();
+})();
+</script>
+</body>
+</html>
